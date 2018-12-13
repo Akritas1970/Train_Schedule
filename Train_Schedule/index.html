@@ -1,0 +1,92 @@
+<!doctype html>
+ <html lang="en-us">
+        <head>
+            <meta charset="utf-8" />
+            <title>Train Schedule</title>
+            
+
+            <!--- Reset CSS file--->
+            <link rel="stylesheet" href = "assets/css/reset.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            
+            <!-- W3 Schools CSS -->
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                       
+            <!--Personalized Styling-->
+            <link rel = "stylesheet" href="assets/css/style.css"> 
+           
+           
+        </head>
+
+        <body>
+            <header class = "w3-container w3-blue-gray w3-padding-8 w3-border w3-border-grey">
+                <h1 class = "w3-center w3-opacity">A Schedule for a ...Trainy Day</h1>
+                <h3 class = "w3-center w3-opacity">Don't let your schedule get derailed by delays - We're always on time!</h3>
+            </header>
+
+            <div class = "w3-content">
+                <table class = " w3-table-all w3-center" >
+                <thead>
+                    <tr class = "w3-blue-gray">
+                        <th>Current Scedule</th>
+                    </tr>
+                </thead>
+                <tbody id = "schedule">    
+                    <tr class =" w3-col text-shadow:1px 1px 0 #444">
+                        <td style = "width: 200px">Train Name</td>
+                        <td style = "width: 200px">Destination</td>
+                        <td style = "width: 200px">Frequency (min)</td>
+                        <td style = "width: 200px">Next Arrival</td>
+                        <td style = "width: 200px">Minutes Away</td>
+                    </tr> 
+                    <tr class =" w3-col">
+                        <td style = "width: 200px">Hogwarts Express</td>
+                        <td style = "width: 200px">Hogwarts School of Wizardry</td>
+                        <td style = "width: 200px">Thrice a Year</td>
+                        <td style = "width: 200px">Dec. 15th</td>
+                        <td style = "width: 200px">2 Days</td>
+                    </tr>
+                    <tr class =" w3-col">
+                        <td style = "width: 200px">Last Train to Clarksville</td>
+                        <td style = "width: 200px">Clarksville, Tennessee</td>
+                        <td style = "width: 200px">30</td>
+                        <td style = "width: 200px">6:30 pm</td>
+                        <td style = "width: 200px">3</td>
+                    </tr>
+                    <tr class =" w3-col">
+                        <td style = "width: 200px">Orient Express</td>
+                        <td style = "width: 200px">Istanbul, Turkey</td>
+                        <td style = "width: 200px">60</td>
+                        <td style = "width: 200px">09:00 pm</td>
+                        <td style = "width: 200px">153</td>
+                    </tr>
+                </tbody><br>
+            </table>
+
+        </div>
+
+             <div class = "w3-content w3-blue-grey" style = "margin-top: 20px">
+                <form class="w3-container w3-card-4">
+                     <h4 class = "w3-opacity">Add Train</h4>
+                       
+                    <p>
+                         <label>Train Name</label>
+                     <input id = "trainName-input" class="w3-input w3-border w3-round-large" name="first" type="text"></p>
+                     <p>
+                        <label>Destination</label>
+                     <input id = "destination-input" class="w3-input w3-border w3-round-large" name="last" type="text"></p>
+                     <p>
+                        <label>First Train Name (HH:mm- military time)</label>
+                     <input id = "firstTrain-input" class="w3-input w3-border w3-round-large" name="last" type="text"></p>
+                     <p>
+                        <label>Frequency (minutes)</label>
+                     <input id = "frequency-input" class="w3-input w3-border w3-round-large" name="last" type="text"></p> 
+                     <button id = "add-train" class="w3-btn w3-red">Submit</button>
+                </form>
+            </div>
+            <!--JQuery link-->   
+            <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script type="text/javascript" src="assets/javascript/schedule.js"></script>  
+
+        </body>
